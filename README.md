@@ -14,5 +14,6 @@ This Open-source Project contains:
 5. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
 
 **Reference**
+
 [1] Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure.
 
