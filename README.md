@@ -13,3 +13,5 @@ This Open-source Project contains:
 
 4. Hodiewindow function file which is needed for doing the FFT.
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{up}=(V_{inp}-V_{ref})\times&space;C_{tot}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{up}=(V_{inp}-V_{ref})\times&space;C_{tot}" title="Q_{up}=(V_{inp}-V_{ref})\times C_{tot}" /></a>
+
