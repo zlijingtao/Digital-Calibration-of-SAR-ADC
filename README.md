@@ -11,7 +11,9 @@ This Open-source Project contains:
 
 4. Hodiewindow function file (hodiewindow.m) which is needed for doing the FFT.
 
-5. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
+5. A descrption file (Proposed SAR ADC.pdf) to explain the "charge redistribution mechanism" of the proposed ADC architecture.
+
+6. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
 
 **Reference**
 
