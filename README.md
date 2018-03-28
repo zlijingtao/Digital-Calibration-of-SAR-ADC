@@ -15,3 +15,5 @@ This Open-source Project contains:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{up}=(V_{inp}-V_{ref})\times&space;C_{tot}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{up}=(V_{inp}-V_{ref})\times&space;C_{tot}" title="Q_{up}=(V_{inp}-V_{ref})\times C_{tot}" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt&space;{{a^2}&space;&plus;&space;{b^2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt&space;{{a^2}&space;&plus;&space;{b^2}}" title="\sqrt {{a^2} + {b^2}}" /></a>
+
