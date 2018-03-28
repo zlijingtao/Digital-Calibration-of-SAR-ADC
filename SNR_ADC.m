@@ -1,4 +1,7 @@
-function [SNDR,SFDR,ENOB,SNR]=SNR_ADC_N(adco,N)
+function [SNDR,SFDR,ENOB,SNR]=SNR_ADC(adco,N)
+%The input must by an M*N matrix (output of the ADC behavoral model), and an N which is the bits of the ADC.
+%M as big as possible, usually of 2^15.
+%N must be an even number and usually larger than 4.
 len= length(adco);
 
 Fs=100e6;
