@@ -8,8 +8,8 @@ fs=100;  % frequency of sampling clock, in Mhz
 fin=fs*(0.125*len-17)/len;
 Vref=1;%We define the Vref=1V, our bianry search range is thus -1v~+1V
 ground=0;
-Vcm=1;%The common mode voltage is defined equal to the Vref
-sig_c=0.002;%Define the Standard Deviation (Std) of an unit capacitor
+Vcm=1/2;%The common mode voltage is defined as half of the Vref
+sig_c=0;%Define the Standard Deviation (Std) of an unit capacitor
 C_norp=[];
 for r=1:N-1;
     C_norp=[C_norp, 2^(N-1-r)];
@@ -46,7 +46,7 @@ end
 new_Vxp=(Cp*Ft*Vref-Cp_tot*Vref+Cp_tot*Vinp)/Cp_tot;
 new_Vxn=(Cn*Fb*Vref-Cn_tot*Vref+Cn_tot*Vinn)/Cn_tot;
 Energy=Energy + Cp*(abs((new_Vxp*ones(N,1)-Ft*Vref)-(Vxp*ones(N,1)-old_Ft*Vref)).^2) + Cn*(abs((new_Vxn*ones(N,1)-Fb*Vref)-(Vxn*ones(N,1)-old_Fb*Vref)).^2);
-
+%Delta_Energy= capacitance* (Voltage_new-Voltage_old)^2
 for i=1:N-1
     Vxp=(Cp*Ft*Vref-Cp_tot*Vref+Cp_tot*Vinp)/Cp_tot;
     Vxn=(Cn*Fb*Vref-Cn_tot*Vref+Cn_tot*Vinn)/Cn_tot;
