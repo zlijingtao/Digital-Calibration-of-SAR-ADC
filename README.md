@@ -25,8 +25,6 @@ This Code part contains:
 
 4. Hodiewindow function file (hodiewindow.m) which is needed for doing the FFT.
 
-5. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
-
 <h3 id="theory">Theory</h3>
 
 The theory part contains:
