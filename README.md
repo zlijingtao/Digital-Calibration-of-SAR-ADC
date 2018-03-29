@@ -48,9 +48,9 @@ Matlab is a powerful tool to conduct scientific research and implement your idea
 
 用处：用于数学建模及仿真。
 
-Matlab官方教程(https://cn.mathworks.com/support/learn-with-matlab-tutorials.html?s_tid=hp_ff_l_tutorials)
+Matlab教程：[Matlab官方教程](https://cn.mathworks.com/support/learn-with-matlab-tutorials.html?s_tid=hp_ff_l_tutorials)
 
-更有效率的学习方法：直接上手，遇到不懂的直接baidu。
+比看教程更有效率的学习方法：直接上手，遇到不懂的直接baidu。
 
 <h3 id="mathtype">Mathtype</h3>
 
