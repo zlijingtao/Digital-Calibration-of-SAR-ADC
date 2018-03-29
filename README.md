@@ -44,8 +44,37 @@ The theory part contains:
 
 <h3 id="matlab">Matlab</h3>
 
+Matlab is a powerful tool to conduct scientific research and implement your ideas.
+
+用处：用于数学建模及仿真。
+
+Matlab官方教程(https://cn.mathworks.com/support/learn-with-matlab-tutorials.html?s_tid=hp_ff_l_tutorials)
+
+更有效率的学习方法：直接上手，遇到不懂的直接baidu。
+
 <h3 id="mathtype">Mathtype</h3>
+
+Mathtype is a tool to type your mathematical equations.
+
+用处：用于公式编辑。
+
+Mathtype极为简单，易于上手。
+
+需要注意的地方：
+在Preference->Cut and Copy Preference 中，可以对拷贝的输出格式进行设置，默认为Equation Object， 适合直接拷贝进word中；还有MathML格式，适合拷贝进Latex中，极为方便。
 
 <h3 id="latex">Latex</h3>
 
+Latex is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
+
+用处：用于论文写作。
+
+Latex教程：[LaTeX新人教程，30分钟从完全陌生到基本入门](http://blog.sina.com.cn/s/blog_90444ed201016iq6.html)
+
 <h3 id="markdown">Markdown</h3>
+
+Markdown语言是一种轻量化的标记语言，支持HTML。
+
+用处：写博客，在Github写readme，分享自己的idea。
+
+Markdown教程：[othree的Markdwon简明教程](https://github.com/zlijingtao/markdown-syntax-zhtw/blob/master/syntax.md)
