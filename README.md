@@ -31,7 +31,7 @@ This Code part contains:
 
 6. Behavioral Model file ([SAR_conventional.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_conventional.m)) of the conventional SAR ADC architecture in [1], newly uploaded by Whove.
 
-7. Behavioral Model file ([SAR_ccliu_10b_rd.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_ccliu_10b_rd.m)) of redundant algorithm proposed in [2], but the performance(ENOB) is 1-2 bit less than the ideal case, could someone could fix this?
+7. Behavioral Model file ([SAR_ccliu_10b_rd.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_ccliu_10b_rd.m)) of redundant algorithm proposed in [2], but the performance(ENOB) is 1-2 bit less than the ideal case, could someone help fix this?
 
 8. Full adder function file ([full_adder.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/full_adder.m)) to implement the full-adder.
 
