@@ -41,10 +41,7 @@ The redundant is a design method for mitigating the effect of decision error occ
 
 The implementation of the redundant in a 10-b SAR ADC is like this:
 
-<center>
 <img src="http://ieeexplore.ieee.org/ielx5/5428240/5433812/5433970/html/img/5433970-fig-2-hires.gif" width="75%" height="75%" />
-Fig.1 Implementation of redundant in a 10-b SAR ADC
-</center>
 
 * * *
 **Reference**
