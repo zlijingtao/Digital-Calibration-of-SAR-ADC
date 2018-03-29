@@ -29,6 +29,10 @@ This Code part contains:
 
 5. Err_compare function file ([err_compare.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/err_compare.m)) to emulate the decision error occurs in the SAR process.
 
+6. Behavioral Model file (SAR_conventional.m) newly uploaded by Whove.
+
+7. Behavioral Model file (SAR_ccliu_10b_rd.m) of redundant algorithm proposed in [2], but the performance(ENOB) is 1-2 bit less than the ideal case, could someone could fix this?
+
 <h2 id="theory">Theory</h2>
 
 <h3 id="CR_theory">Charge Redistribution</h3>
