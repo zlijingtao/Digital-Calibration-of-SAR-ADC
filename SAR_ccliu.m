@@ -37,7 +37,7 @@ Vxn=Vinn;
 Energy=0;%Energy consumption
 old_Ft=Ft;
 old_Fb=Fb;
-if err_compare(Vxp,Vxn,comp_error)==1
+if Vxp>Vxn
     A(1)=1;%MSB output
     Ft(1)=0;
 else
