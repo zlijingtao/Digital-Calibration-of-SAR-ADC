@@ -2,11 +2,14 @@
 
 **Successive Approximation Register (SAR) ADC Digital Calibration**
 
-[概述](#overview)
+*   [Overview](#overview)
+    *   [Code](#code)
+    *   [Theory](#theory)
+<h2 id="overview">Overview</h2>
 
-<h2 id="overview">概述</h2>
+<h3 id="Code">Code</h3>
 
-This project contains:
+This Code part contains:
 
 1. A Run file (Run_SAR_ccliu.m) to auto-test the ADC model and output its dynamic performance and also the averaging energy consumption.
 
@@ -16,9 +19,14 @@ This project contains:
 
 4. Hodiewindow function file (hodiewindow.m) which is needed for doing the FFT.
 
-5. A descrption file (Proposed SAR ADC.pdf) to explain the "charge redistribution mechanism" of the proposed ADC architecture.
+5. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
 
-6. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
+<h3 id="Theory">Theory</h3>
+
+The theory part contains:
+
+1. A PDF file (Proposed SAR ADC.pdf) to explain the "Charge Redistribution Theory" of the proposed ADC architecture.
+
 * * *
 **Reference**
 
