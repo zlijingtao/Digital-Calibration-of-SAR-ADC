@@ -10,6 +10,7 @@ Vref=1;%We define the Vref=1V, our bianry search range is thus -1v~+1V
 ground=0;
 Vcm=1/2;%The common mode voltage is defined as half of the Vref
 sig_c=0;%Define the Standard Deviation (Std) of an unit capacitor
+comp_error=0;%Define the posibility of an error decision in the SAR process
 C_norp=[];
 for r=1:N-1;
     C_norp=[C_norp, 2^(N-1-r)];
@@ -36,7 +37,7 @@ Vxn=Vinn;
 Energy=0;%Energy consumption
 old_Ft=Ft;
 old_Fb=Fb;
-if Vxp >= Vxn
+if err_compare(Vxp,Vxn,comp_error)==1
     A(1)=1;%MSB output
     Ft(1)=0;
 else
@@ -52,7 +53,7 @@ for i=1:N-1
     Vxn=(Cn*Fb*Vref-Cn_tot*Vref+Cn_tot*Vinn)/Cn_tot;
     old_Ft=Ft;
     old_Fb=Fb;
-    if Vxp >= Vxn
+    if err_compare(Vxp,Vxn,comp_error)==1
         if i==N-1
             A(i+1)=1;
         else
