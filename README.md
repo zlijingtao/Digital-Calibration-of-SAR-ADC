@@ -3,11 +3,17 @@
 **Successive Approximation Register (SAR) ADC Digital Calibration**
 
 *   [Overview](#overview)
-    *   [Code](#code)
-    *   [Theory](#theory)
+   *  [Code](#code)
+   *  [Theory](#theory)
+*   [Tutorial](#tutorial)
+   *  [Matlab](#matlab)
+   *  [Mathtype](#mathtype)
+   *  [Latex](#latex)
+   *  [markdwon](#markdown)
+   
 <h2 id="overview">Overview</h2>
 
-<h3 id="Code">Code</h3>
+<h3 id="code">Code</h3>
 
 This Code part contains:
 
@@ -21,7 +27,7 @@ This Code part contains:
 
 5. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
 
-<h3 id="Theory">Theory</h3>
+<h3 id="theory">Theory</h3>
 
 The theory part contains:
 
@@ -32,3 +38,14 @@ The theory part contains:
 
 [1]: [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
 
+* * *
+
+<h2 id="tutorial">Tutorial</h2>
+
+<h3 id="matlab">Matlab</h3>
+
+<h3 id="mathtype">Mathtype</h3>
+
+<h3 id="latex">Latex</h3>
+
+<h3 id="markdown">Markdown</h3>
