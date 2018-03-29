@@ -31,7 +31,7 @@ This Code part contains:
 
 <h3 id="CR_theory">Charge Redistribution</h3>
 
-See the PDF file (Proposed SAR ADC.pdf). It well explains the "Charge Redistribution Theory" of the proposed ADC architecture in [1].
+See the PDF file ([Proposed SAR ADC.pdf](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/Proposed%20SAR%20ADC.pdf)). It well explains the "Charge Redistribution Theory" of the proposed ADC architecture in [1].
 
 <h3 id="RD_theory">Redundant</h3>
 
