@@ -4,7 +4,9 @@
 
 *   [Overview](#overview)
     *   [Code](#code)
-    *   [Theory](#theory)
+*   [Theory](#theory)
+   *  [Charge Redistribution](#CR_theory)
+   *  [Redundant](#RD_theory)
 *   [Tutorial](#tutorial)
    *  [Matlab](#matlab)
    *  [Mathtype](#mathtype)
@@ -25,16 +27,24 @@ This Code part contains:
 
 4. Hodiewindow function file (hodiewindow.m) which is needed for doing the FFT.
 
-<h3 id="theory">Theory</h3>
+<h2 id="theory">Theory</h2>
 
-The theory part contains:
+<h3 id="CR_theory">Charge Redistribution</h3>
 
-1. A PDF file (Proposed SAR ADC.pdf) to explain the "Charge Redistribution Theory" of the proposed ADC architecture.
+See the PDF file (Proposed SAR ADC.pdf). It well explains the "Charge Redistribution Theory" of the proposed ADC architecture in [1].
+
+<h3 id="RD_theory">Redundant</h3>
+
+The redundant is a design method for mitigating the effect of decision error occurs in SAR ADC. The decision error is a settling problem during the charge redistribution. (for more info, please refer to Liu et al. [2].)
+
+The implementation of the redundant in a 10-b SAR ADC is like this:
+
 
 * * *
 **Reference**
 
 [1]: [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
+[2]: [Liu et al. - 2010 - A 10b 100MSs 1.13mW SAR ADC with binary-scaled error compensation](http://ieeexplore.ieee.org/abstract/document/5433970/)
 
 * * *
 
