@@ -17,5 +17,5 @@ This Open-source Project contains:
 
 **Reference**
 
-[1] Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure.
+[1] [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
 
