@@ -19,13 +19,15 @@
 
 This Code part contains:
 
-1. A Run file (Run_SAR_ccliu.m) to auto-test the ADC model and output its dynamic performance and also the averaging energy consumption.
+1. An executable file ([Run_SAR_ccliu.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/Run_SAR_ccliu.m)) to auto-test the ADC model and output its dynamic performance and also the averaging energy consumption.
 
-2. Behavioral Model file (SAR_ccliu.m) of a popular SAR ADC architecture proposed by Liu et al. [1].
+2. Behavioral Model file ([SAR_ccliu.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_ccliu.m)) of a popular SAR ADC architecture proposed by Liu et al. [1].
 
-3. Fast Fourier Transfromation (FFT) file (SNR_ADC.m) to test the dynamic performance of the SAR ADC beharvioral model.
+3. Fast Fourier Transfromation (FFT) file ([SNR_ADC.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SNR_ADC.m)) to test the dynamic performance of the SAR ADC beharvioral model.
 
-4. Hodiewindow function file (hodiewindow.m) which is needed for doing the FFT.
+4. Hodiewindow function file ([hodiewindow.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/hodiewindow.m)) which is needed for doing the FFT.
+
+5. Err_compare function file ([err_compare.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/err_compare.m)) to emulate the decision error occurs in the SAR process.
 
 <h2 id="theory">Theory</h2>
 
