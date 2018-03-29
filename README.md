@@ -2,9 +2,9 @@
 
 **Successive Approximation Register (SAR) ADC Digital Calibration**
 
-*		[Overview](#overview)
-		*		[Code](#code)
-		*		[Theory](#theory)
+*   [Overview](#overview)
+    *   [Code](#code)
+    *   [Theory](#theory)
 *   [Tutorial](#tutorial)
    *  [Matlab](#matlab)
    *  [Mathtype](#mathtype)
