@@ -5,8 +5,8 @@
 *   [Overview](#overview)
     *   [Code](#code)
 *   [Theory](#theory)
-   *  [Charge Redistribution](#CR_theory)
-   *  [Redundant](#RD_theory)
+    *   [Charge Redistribution](#CR_theory)
+    *   [Redundant](#RD_theory)
 *   [Tutorial](#tutorial)
    *  [Matlab](#matlab)
    *  [Mathtype](#mathtype)
@@ -44,6 +44,7 @@ The implementation of the redundant in a 10-b SAR ADC is like this:
 **Reference**
 
 [1]: [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
+
 [2]: [Liu et al. - 2010 - A 10b 100MSs 1.13mW SAR ADC with binary-scaled error compensation](http://ieeexplore.ieee.org/abstract/document/5433970/)
 
 * * *
