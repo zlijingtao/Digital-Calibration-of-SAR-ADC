@@ -15,7 +15,7 @@ This project contains:
 5. A descrption file (Proposed SAR ADC.pdf) to explain the "charge redistribution mechanism" of the proposed ADC architecture.
 
 6. Capacitor Mismatch Calibration Method I and II from our unpublished work (unavailable now).
-
+* * *
 **Reference**
 
 [1]: [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
