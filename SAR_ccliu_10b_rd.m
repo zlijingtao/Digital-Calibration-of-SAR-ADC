@@ -11,8 +11,7 @@ Vref=1;%We define the Vref=1V, our bianry search range is thus -1v~+1V
 ground=0;
 Vcm=1/2;%The common mode voltage is defined as half of the Vref
 sig_c=0;%Define the Standard Deviation (Std) of an unit capacitor
-comp_error=0;%Define the posibility of an error decision in the SAR process
-%C_norp=[256, 128, 128, 64, 32, 16, 16, 8, 4, 2, 2, 1, 1];
+comp_error=0;%To test the validity of redundant, set the error to 1% and compare with the normal architecture.
 C_norp=[ 256, 128, 64, 64, 32, 16, 8, 8, 4, 2, 1, 1, 1];
 C_norn=C_norp;
 C_devp=sig_c*C_norp.*randn(1,N+3);%The deviation of Capacitor in this work
@@ -21,12 +20,13 @@ Cp=C_norp+C_devp;%Real value of the DAC is the sum of the Ideal value and the de
 Cn=C_norn+C_devn;
 Cp_tot=sum(Cp);%Total Capacitance of the Capacitive Array
 Cn_tot=sum(Cn);
-factor=(sum(Cp)+sum(Cn)-Cp(4)-Cp(8)-Cp(12)-Cn(4)-Cn(8)-Cn(12))/(sum(Cp)+sum(Cn));
+factor=(Cp_tot+Cn_tot-Cp(4)-Cp(8)-Cp(12)-Cn(4)-Cn(8)-Cn(12))/(Cp_tot+Cn_tot);
 adco=[];
 E=[];
 for t=(0:len-1)*(1/fs)
 A=zeros(1,N+3);
 Vin=VREF*factor*sin(2*pi*fin*t); % Our input is an sinusoidal wave
+%Vin=sin(2*pi*fin*t); % Our input is an sinusoidal wave
 Vinp=Vcm+0.5*Vin;
 Vinn=Vcm-0.5*Vin;
 Ft=ones(N+3,1);%Define the Switch on the top side array, equals to 1 means they connect to Vref
@@ -78,29 +78,45 @@ E=[E;Energy];
 %This part is for converting the 13-b after compensation to the normal 10-b
 %A(1-3)=B1-B3 A(4)-B3c A(5-7)=B4-B6 A(8)-B6c A(9-11)=B7-B9 A(12)-B9c
 %A(13)-B(10)
+
 B=zeros(1,N);
 C=zeros(1,N);
-B(10)=1-A(13);
+%First row plus the third row -73 + Compensation Capacotor
+B(10)=1;
 C(10)=0;
-[B(9),C(9)]=full_adder((1-A(12)),A(11),C(10));
-[B(8),C(8)]=full_adder((1-A(12)),A(10),C(9));
-[B(7),C(7)]=full_adder(A(12),A(9),C(8));
-[B(6),C(6)]=full_adder((1-A(8)),A(7),C(7));
-[B(5),C(5)]=full_adder((1-A(8)),A(6),C(6));
-[B(4),C(4)]=full_adder(A(8),A(5),C(5));
-[B(3),C(3)]=full_adder((1-A(4)),A(3),C(4));
-[B(2),C(2)]=full_adder((1-A(4)),A(2),C(3));
-[B(1),C(1)]=full_adder((1-A(4)),A(1),C(2));
+[B(9),C(9)]=full_adder(1,A(12),C(10));
+[B(8),C(8)]=full_adder(1,0,C(9));
+[B(7),C(7)]=full_adder(0,0,C(8));
+[B(6),C(6)]=full_adder(1,A(8),C(7));
+[B(5),C(5)]=full_adder(1,0,C(6));
+[B(4),C(4)]=full_adder(0,0,C(5));
+[B(3),C(3)]=full_adder(1,A(4),C(4));
+[B(2),C(2)]=full_adder(1,0,C(3));
+[B(1),C(1)]=full_adder(1,0,C(2));
+Bsign=full_adder(1,0,C(1));
+%Then plus the Normal capacitor
+D=zeros(1,N);
+C=zeros(1,N);
+D(10)=1-A(13);
+C(10)=A(13);
+[D(9),C(9)]=full_adder(B(9),A(11),C(10));
+[D(8),C(8)]=full_adder(B(8),A(10),C(9));
+[D(7),C(7)]=full_adder(B(7),A(9),C(8));
+[D(6),C(6)]=full_adder(B(6),A(7),C(7));
+[D(5),C(5)]=full_adder(B(5),A(6),C(6));
+[D(4),C(4)]=full_adder(B(4),A(5),C(5));
+[D(3),C(3)]=full_adder(B(3),A(3),C(4));
+[D(2),C(2)]=full_adder(B(2),A(2),C(3));
+[D(1),C(1)]=full_adder(B(1),A(1),C(2));
 
-overflow=xor(C(1),(1-A(4)));
+overflow=xor(C(1),Bsign);
 if overflow==1
-    if B(1)==1
-        B=zeros(1,N);
+    if D(1)==1
+        D=zeros(1,N);
     else
-        B=ones(1,N);
+        D=ones(1,N);
     end
 end
-
-adco=[adco;B];
+adco=[adco;D];
 end
 Energy_mean=sum(E)/length(E);
