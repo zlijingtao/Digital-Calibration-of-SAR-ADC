@@ -100,9 +100,9 @@ Markdown教程：[othree的Markdwon简明教程](https://github.com/zlijingtao/m
 
 <h3 id="matplotlib">Matplotlib</h3>
 
-Matplotlib是Python的一个功能强大的绘图库。
+Matplotlib是Python的一个功能强大的绘图库（需要提前安装[python](https://www.python.org/downloads/release/python-364/)）。
 
-用处：可用于绘制各种fancy的图片（需要提前安装[python](https://www.python.org/downloads/release/python-364/)）。
+用处：可用于绘制各种fancy的图片（[知乎：如何在论文中画出漂亮的插图？](https://www.zhihu.com/question/21664179)）。
 
 Matplotlib安装教程：[python:安装pylab模块](https://blog.csdn.net/bit_clearoff/article/details/52502654)
 
