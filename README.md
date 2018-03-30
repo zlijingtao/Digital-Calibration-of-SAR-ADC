@@ -12,7 +12,7 @@
    *  [Mathtype](#mathtype)
    *  [Latex](#latex)
    *  [Markdwon](#markdown)
-   
+   *  [Matplotlib](#matplotlib)
 <h2 id="overview">Overview</h2>
 
 <h3 id="code">Code</h3>
@@ -96,3 +96,13 @@ Markdown语言是一种轻量化的标记语言，支持HTML。
 用处：写博客，在Github写readme，分享自己的idea。
 
 Markdown教程：[othree的Markdwon简明教程](https://github.com/zlijingtao/markdown-syntax-zhtw/blob/master/syntax.md)
+
+<h3 id="matplotlib">Matplotlib</h3>
+
+Matplotlib是Python的一个功能强大的绘图库，可用于绘制各种fancy的图片。
+
+需要提前安装[python](https://www.python.org/downloads/release/python-364/)
+
+Matplotlib安装教程：[python:安装pylab模块] (https://blog.csdn.net/bit_clearoff/article/details/52502654)
+
+Matplotlib使用教程：[Matplotlib Tutorial(译)](http://reverland.org/python/2012/09/07/matplotlib-tutorial/)
