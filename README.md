@@ -102,7 +102,7 @@ Markdown教程：[othree的Markdwon简明教程](https://github.com/zlijingtao/m
 
 Matplotlib是Python的一个功能强大的绘图库，可用于绘制各种fancy的图片。
 
-需要提前安装[python](https://www.python.org/downloads/release/python-364/)
+（需要提前安装[python](https://www.python.org/downloads/release/python-364/)。）
 
 Matplotlib安装教程：[python:安装pylab模块](https://blog.csdn.net/bit_clearoff/article/details/52502654)
 
