@@ -92,9 +92,9 @@ Latex教程：[LaTeX新人教程，30分钟从完全陌生到基本入门](http:
 
 <h3 id="markdown">Markdown</h3>
 
-Markdown语言是一种轻量化的标记语言，支持HTML。
+Markdown语言是一种轻量化的标记语言，支持[HTML](http://www.w3school.com.cn/html/html_jianjie.asp)。
 
-用处：写博客，在Github写readme，分享自己的idea。
+用处：写blog，写readme，分享自己的idea。
 
 Markdown教程：[othree的Markdwon简明教程](https://github.com/zlijingtao/markdown-syntax-zhtw/blob/master/syntax.md)
 
