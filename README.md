@@ -12,7 +12,8 @@
    *  [Mathtype](#mathtype)
    *  [Latex](#latex)
    *  [Markdwon](#markdown)
-   *  [Matplotlib](#matplotlib)
+   *  [Matplotlib](#matplotlib)
+   
 <h2 id="overview">Overview</h2>
 
 <h3 id="code">Code</h3>
