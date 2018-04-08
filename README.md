@@ -44,7 +44,7 @@ See the PDF file ([Proposed SAR ADC.pdf](https://github.com/zlijingtao/Digital-C
 
 And for the split structure, see figure below:
 
-<img src="https://i.loli.net/2018/04/08/5ac97eb6632d8.jpg" width="100%" height="100%" />
+<img src="https://i.loli.net/2018/04/08/5ac97eb6632d8.jpg" width="75%" height="75%" />
 
 <h3 id="RD_theory">Redundant</h3>
 
