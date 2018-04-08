@@ -32,7 +32,7 @@ This Code part contains:
 
 6. Behavioral Model file ([SAR_conventional.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_conventional.m)) of the conventional SAR ADC architecture in [1], newly uploaded by Whove.
 
-7. Behavioral Model file ([SAR_ccliu_10b_rd.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_ccliu_10b_rd.m)) of redundant algorithm proposed in [2].
+7. Behavioral Model file ([SAR_ccliu_10b_rd.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/SAR_ccliu_10b_rd.m)) of redundant algorithm proposed in [3].
 
 8. Full adder function file ([full_adder.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/full_adder.m)) to implement the full-adder.
 
@@ -42,13 +42,13 @@ This Code part contains:
 
 See the PDF file ([Proposed SAR ADC.pdf](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/Proposed%20SAR%20ADC.pdf)). It well explains the "Charge Redistribution Theory" of the proposed ADC architecture in [1].
 
-And for the split structure, see figure below:
+And for the split structure in [2], see figure below:
 
 <img src="https://i.loli.net/2018/04/08/5ac97eb6632d8.jpg" width = "594" height = "1017" />
 
 <h3 id="RD_theory">Redundant</h3>
 
-The redundant is a design method for mitigating the effect of decision error occurs in SAR ADC. The decision error is a settling problem during the charge redistribution. (for more info, please refer to Liu et al. [2].)
+The redundant is a design method for mitigating the effect of decision error occurs in SAR ADC. The decision error is a settling problem during the charge redistribution. (for more info, please refer to Liu et al. [3].)
 
 The implementation of the redundant in a 10-b SAR ADC is like this:
 
@@ -59,7 +59,9 @@ The implementation of the redundant in a 10-b SAR ADC is like this:
 
 [1]: [Liu et al. - 2010 - A 10-bit 50-MSs SAR ADC with a monotonic capacitor switching procedure](http://ieeexplore.ieee.org/abstract/document/5437496/).
 
-[2]: [Liu et al. - 2010 - A 10b 100MSs 1.13mW SAR ADC with binary-scaled error compensation](http://ieeexplore.ieee.org/abstract/document/5433970/)
+[2]: [Yoshioka et al. - 2010 - A 10-b 50-MSs 820-μW SAR ADC with on-chip digital calibration](http://ieeexplore.ieee.org/abstract/document/5621876/)
+
+[3]: [Liu et al. - 2010 - A 10b 100MSs 1.13mW SAR ADC with binary-scaled error compensation](http://ieeexplore.ieee.org/abstract/document/5433970/)
 
 * * *
 
