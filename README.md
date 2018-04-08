@@ -42,6 +42,10 @@ This Code part contains:
 
 See the PDF file ([Proposed SAR ADC.pdf](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/Proposed%20SAR%20ADC.pdf)). It well explains the "Charge Redistribution Theory" of the proposed ADC architecture in [1].
 
+And for the split structure, see figure below:
+
+<img src="https://i.loli.net/2018/04/08/5ac97eb6632d8.jpg" width="100%" height="100%" />
+
 <h3 id="RD_theory">Redundant</h3>
 
 The redundant is a design method for mitigating the effect of decision error occurs in SAR ADC. The decision error is a settling problem during the charge redistribution. (for more info, please refer to Liu et al. [2].)
