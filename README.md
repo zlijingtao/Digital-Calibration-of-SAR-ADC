@@ -40,6 +40,8 @@ This Code part contains:
 
 10. Decimal to Binary function file ([decimal2binary.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/decimal2binary.m)) to implement decimal to binary conversion.
 
+11. Behavioral Model file ([SAR_project18_10repeat.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/tree/master/Thesis)) of the same SAR algorithm as [4] but changes to an 18-bit SAR ADC.
+
 <h2 id="theory">Theory</h2>
 
 <h3 id="CR_theory">Charge Redistribution</h3>
