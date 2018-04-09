@@ -36,6 +36,10 @@ This Code part contains:
 
 8. Full adder function file ([full_adder.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/full_adder.m)) to implement the full-adder.
 
+9. Behavioral Model file ([SAR_JSSC_shen.m], [Flash_JSSC_shen] and [SAR_JSSC_shen_10repeat](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/tree/master/JSSC_shen)) of the SAR algorithm Shen et al. presented in [4].
+
+10. Decimal to Binary function file ([decimal2binary.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/decimal2binary.m)) to implement decimal to binary conversion.
+
 <h2 id="theory">Theory</h2>
 
 <h3 id="CR_theory">Charge Redistribution</h3>
@@ -62,6 +66,8 @@ The implementation of the redundant in a 10-b SAR ADC is like this:
 [2]: [Yoshioka et al. - 2010 - A 10-b 50-MSs 820-μW SAR ADC with on-chip digital calibration](http://ieeexplore.ieee.org/abstract/document/5621876/)
 
 [3]: [Liu et al. - 2010 - A 10b 100MSs 1.13mW SAR ADC with binary-scaled error compensation](http://ieeexplore.ieee.org/abstract/document/5433970/)
+
+[4]: [Shen et al. - 2017 - A 16-bit 16MS s SAR ADC with On-Chip Calibration in 55nm CMOS](http://ieeexplore.ieee.org/abstract/document/8248649/)
 
 * * *
 
