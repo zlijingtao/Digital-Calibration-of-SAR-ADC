@@ -36,7 +36,7 @@ This Code part contains:
 
 8. Full adder function file ([full_adder.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/full_adder.m)) to implement the full-adder.
 
-9. Behavioral Model file ([SAR_JSSC_shen.m], [Flash_JSSC_shen] and [SAR_JSSC_shen_10repeat](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/tree/master/JSSC_shen)) of the SAR algorithm Shen et al. presented in [4].
+9. Behavioral Model file ([SAR_JSSC_shen.m, Flash_JSSC_shen and SAR_JSSC_shen_10repeat](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/tree/master/JSSC_shen)) of the SAR algorithm Shen et al. presented in [4].
 
 10. Decimal to Binary function file ([decimal2binary.m](https://github.com/zlijingtao/Digital-Calibration-of-SAR-ADC/blob/master/decimal2binary.m)) to implement decimal to binary conversion.
 
